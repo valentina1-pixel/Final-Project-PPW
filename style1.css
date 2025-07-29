@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f1ee;
+  color: #3e2b23;
+}
+
+header {
+  background-color: #7a5541;
+  padding: 15px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.nav-logo {
+  text-decoration: none;
+}
+
+.logo-text {
+  font-size: 24px;
+  color: #fffaf5;
+  text-decoration: none;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item .nav-link {
+  text-decoration: none;
+  color: #fffaf5;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-item .nav-link:hover {
+  color: #a87c5f;
+}
+
+#menu-open-button,
+#menu-close-button {
+  display: none;
+  font-size: 22px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-section {
+  background-color: #eae1d6;
+  padding: 60px 20px;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-details {
+  flex: 1;
+}
+
+.hero-image-wrapper {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 400px;
+}
+
+.title {
+  font-size: 48px;
+  color: #5c3b25;
+}
+
+.subtitle {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #7a5541;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #3e2b23;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.button {
+  padding: 12px 24px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.order-now {
+  background-color: #8b5e3c;
+  color: #fff;
+}
+
+.order-now:hover {
+  background-color: #5c3b25;
+}
+
+.contact-us {
+  background-color: transparent;
+  color: #8b5e3c;
+  border: 2px solid #8b5e3c;
+}
+
+.contact-us:hover {
+  background-color: #8b5e3c;
+  color: #fff;
+}
+
+/* About Section */
+.about-section {
+  background-color: #f9f5f0;
+  padding: 60px 20px;
+}
+
+.about-section .section-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image-wrapper {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(85, 60, 40, 0.2);
+}
+
+.about-details {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #5c3b25;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 16px;
+  color: #3e2b23;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.social-link-list {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  display: inline-block;
+  color: #a87c5f;
+  font-size: 22px;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #5c3b25;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #7a5541;
+  color: white;
+}
+
+.footer-section {
+  background-color: #7a5541;
+  color: #ccc;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-inline {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.separator {
+  color: #ccc;
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-details,
+  .about-details {
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .social-link-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-link {
+    font-size: 18px;
+  }
+
+  .hero-details .title {
+    font-size: 2rem;
+  }
+
+  .hero-details .subtitle {
+    font-size: 1.1rem;
+  }
+}

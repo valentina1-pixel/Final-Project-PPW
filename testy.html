@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonial Slider</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style3.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar section-content">
+      <a href="#" class="nav-logo">
+        <h2 class="logo-text">☕ Coffee Here</h2>
+      </a>
+      <ul class="nav-menu">
+        <button id="menu-close-button" class="fas fa-times"></button>
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+        <li class="nav-item"><a href="testy.html" class="nav-link">Testimonials</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button id="menu-open-button" class="fas fa-bars"></button>
+    </nav>
+  </header>
+
+  <section class="testimonials" id="testimonials">
+    <h2 class="title">TESTIMONIALS</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide testimonial">
+          <img src="Gambar1.jpeg" alt="Valen" />
+          <h3>Valen</h3>
+          <p>"Cappucino di cafe ini memiliki rasa kopi seimbang dengan susu yang creamy, foam-nya halus dan aromanya kuat. Cocok untuk penikmat kopi ringan."</p>
+        </div>
+        <div class="swiper-slide testimonial">
+          <img src="Gambar2.jpeg" alt="Olip" />
+          <h3>Olip</h3>
+          <p>"Croissant disini memiliki rasa yang renyah di luar, lembut dan sedikit manis di dalam. Cocok untuk sarapan atau camilan sore."</p>
+        </div>
+        <div class="swiper-slide testimonial">
+          <img src="Gambar3.jpeg" alt="Sasa" />
+          <h3>Sasa</h3>
+          <p>"Matcha Latte di cafe ini mempunyai rasa matcha-nya terasa alami dan tidak pahit. Disajikan hangat maupun dingin tetap enak."</p>
+        </div>
+        <div class="swiper-slide testimonial">
+          <img src="Gambar4.jpeg" alt="Novi" />
+          <h3>Novi</h3>
+          <p>"Cromboloni di cafe ini mempunyai tekstur renyah di luar dan lembut di dalam. Isian manis seperti cokelat yang meleleh di mulut."</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+  <h2 class="text-center mb-4">Menu Favorit Pelanggan</h2>
+  <div class="table-responsive">
+    <table class="table table-hover table-bordered align-middle text-center shadow-sm rounded">
+      <thead class="table-warning">
+        <tr>
+          <th scope="col">Menu</th>
+          <th scope="col">Rating ★ (dari 5)</th>
+          <th scope="col">Jumlah Pesanan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Coffee Latte</td>
+          <td>
+            <span class="text-warning">★★★★★</span>
+          </td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>Redvelvet</td>
+          <td>
+            <span class="text-warning">★★★★☆</span>
+          </td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>Croissant</td>
+          <td>
+            <span class="text-warning">★★★★★</span>
+          </td>
+          <td>80</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<footer class="text-center py-3" style="background-color: #7a5541; color: white;">
+  &copy; 2025 Coffee Shop &bull; Privacy policy &bull; Refund policy
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script3.js"></script>
+</body>
+</html>
